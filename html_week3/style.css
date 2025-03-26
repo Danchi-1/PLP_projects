@@ -1,18 +1,43 @@
 * {
-    font-family: Arial, sans-serif;
+    font-family: 'Verdana', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+h1, h2 {
+    font-family: 'Georgia', serif; 
+    color: darkblue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .highlight {
     color: white;
     background-color: blue;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+
+.job-title {
+    font-weight: bold;
+    color: darkred;
+}
+
+
+.cake-img {
+    display: block;
+    height: 200px;
+    border: 3px solid rgba(182, 18, 155, 0.623);
+    margin: 10px auto;
+    padding: 5px;
 }
 
 #myButton {
+    display: block;
+    margin: 20px auto;
     background-color: green;
     color: white;
     border: none;
