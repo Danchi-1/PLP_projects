@@ -47,6 +47,11 @@ nav a:hover {
     transform: scale(1.2);
 }
 
+#profile-pic{
+    width: 50px;
+    border-radius: 50%;
+}
+
 /* Sections */
 section {
     height: 100vh;

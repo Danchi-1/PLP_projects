@@ -3,30 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
-    <h1>Welcome to My Creative Portfolio</h1>
+    <!-- Navigation Bar -->
     <nav>
-        <a href="#about">About</a>
+        <a href="#about" class="con">About</a>
+        <a href="#education">Education</a>
+        <a href="#interests">Interests</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p class="floating">Hello! I am a passionate web developer with a love for creativity. I am an AI enthusiast ready to dive into it any moment. I am also interested in data analysis and science, with data you can conquer the world.</p>
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Me</h1>
+            <img src="WIN_20250316_17_21_44_Pro.jpg" alt="my profile pictures" id="profile-pic">
+
+            <p class="about_me">
+                Hello! I am a passionate web developer with a love for creativity. I am an AI enthusiast ready to dive into it any moment. I am also interested in data analysis and science, with data you can conquer the world.
+                I am a full-stack developer with a focus on creating dynamic and responsive web applications. I enjoy working with HTML, CSS, JavaScript, and Python. I am always eager to learn new technologies and improve my skills. I believe in the power of collaboration and enjoy working with others to bring ideas to life. I am always looking for new challenges and opportunities to grow as a developer. Let's connect and create something amazing together!
+            </p>
     </section>
 
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <p class="floating">Explore my works below!</p>
+    <!-- Educational Background Section -->
+    <section>
+        <h1>Education</h1>
+        <div id="education">
+            <div class="edu1">
+                <p>I hold a degree in English for IT 1 by Cisco certification.</p>
+                <iframe src="EnglishforIT1Update20250302-28-nyp86p.pdf" frameborder="0"></iframe>
+            </div>
+            <div class="edu2">
+                <p>I hold a degree in Career essentials in generative AI by Microsoft and LinkedIn</p>
+                <iframe src="CertificateOfCompletion_Career Essentials in Generative AI by Microsoft and LinkedIn.pdf" frameborder="0"></iframe>
+            </div>
+            <div class="edu3">
+                <p>
+                    I'm currently schooling at Federal University of Agriculture, Abeokuta. I am studying Mechatronics engineering, a five years course, and I am in my second year.
+                </p>
+                <img src="FUNAAB-logo.jpg" alt="Funaab Logo" id="logo"></img>
+            </div>
+            <div class="edu4">
+                <p>
+                    A student at PLP also. I am currently learning web development, Python and database. I will also learn about AI and machine learning for specialization.
+                </p>
+                <img src="plp_logo.jpg" alt="PLP logo" id="logo">
+            </div>
+        </div>
+        <div class="edu5">
+            <a href="my_resume.pdf" id="cv" download>Download My CV</a>
+        </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p class="floating">Let’s connect and create together!</p>
+    <!-- Interests Section -->
+    <section id="interests">
+        <h1>Interests</h1>
+        <ul>
+            <li>Web Development: Exploring modern frameworks and best practices.</li>
+            <li>Tech Innovations: Keeping up with emerging trends in technology.</li>
+            <li>AI and ML: Exploring AI development tools to create AI technologies.</li>
+            <li>Data science: Interested in diving into the world of data.</li>
+            <li>Cyber security: Interested in protecting systems from malicous attacks while learning hacking along the way</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="grid">
+            <div class="project-card">
+                <img src="Screenshot (33).png" alt="Financial dashboard">
+                <h3>Finance dashboard</h3>
+                <a href="https://finance-dashboard-git-main-danchi-1s-projects.vercel.app/">Check it out here</a>
+                <p>This helps user record all transactions they've done when they input it into the form and advice is then given to the user. This also help to calculate current account balance while keeping record of credit and debits.</p>
+            </div>
+            <div class="project-card">
+                <img src="Screenshot (34).png" alt="Weapanim">
+                <h3>Anime weapons for sale</h3>
+                <a href="https://weapanim.vercel.app/">Check it out here</a>
+                <p>I created a weapons store that sells legendary anime weapons. You can buy, put other weapons for display and more functionality</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 </body>
 </html>
