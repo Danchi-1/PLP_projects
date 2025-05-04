@@ -7,10 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.style.backgroundColor = "white";
             document.getElementById("background-color").innerHTML = "Black background";
             document.getElementById("background-color").style.border = "2px solid white"
+            document.getElementById("hide").style.border = "2px solid white"
         } else {
             document.body.style.backgroundColor = "black";
             document.getElementById("background-color").innerHTML = "White background";
             document.getElementById("background-color").style.border = "2px solid black"
+            document.getElementById("hide").style.border = "2px solid black"
         }
     });
 
@@ -25,9 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("hide").addEventListener("click", function () {
         if (gibberish.style.display == "none"){
             gibberish.style.display = "block";
+            document.getElementById("hide").innerHTML = "Hide gibberish";
         } else {
             gibberish.style.display = "none";
-            document.getElementById("hide").innerHTML = "Show Jargons";
+            document.getElementById("hide").innerHTML = "Show gibberish";
+
         }
     })
 });
