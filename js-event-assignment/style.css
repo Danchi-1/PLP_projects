@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #444;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Hover Box */
+  .hover-box {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .hover-box:hover {
+    transform: scale(1.2);
+    background-color: #0056b3;
+  }
+  
+  /* Keypress Output */
+  #keypress-output {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  /* Text Interaction */
+  #text {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  /* Gallery */
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .gallery img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Accordion */
+  .accordion {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 200px;
+  }
+  
+  .panel {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+  }
+  
+  /* Form Styling */
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  form input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  form .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }

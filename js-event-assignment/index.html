@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Bundle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Playground</h1>
+
+    <!-- 1. Event Handling -->
+    <button id="click-btn">Click me</button>
+    <div class="hover-box" id="hover-box"></div>
+    <p>Press any key to see it below:</p>
+    <div id="keypress-output"></div>
+
+    <!-- 2. Interactive Elements -->
+    <button id="change-text">Change Text</button>
+    <button id="change-color">Change Color</button>
+    <p id="text">I'm waiting for interaction...</p>
+
+    <div class="gallery">
+        <img src="pexels-anna-nekrashevich-7552372.jpg" alt="img1">
+        <img src="pexels-njeromin-14760650.jpg" alt="img2">
+        <img src="pexels-rethaferguson-3810792.jpg" alt="img3">
+    </div>
+
+    <div class="accordion">Toggle Section</div>
+    <div class="panel">Surprise! More content here!</div>
+
+    <!-- 3. Form Validation -->
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+        <input type="text" id="username" placeholder="Username" required><span class="error" id="user-error"></span><br>
+        <input type="email" id="email" placeholder="Email" required><span class="error" id="email-error"></span><br>
+        <input type="password" id="password" placeholder="Password" required><span class="error" id="pass-error"></span><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
